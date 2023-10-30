@@ -1,6 +1,27 @@
 {
   "name": "react-ts-starter-template",
   "version": "1.0.0",
+  "engines": {
+    "node": ">= 18.x"
+  },
+  "description": "React + TypeScript starter template",
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwind",
+    "jest",
+    "react-router",
+    "testing-library",
+    "github-actions"
+  ],
+  "homepage": "https://github.com/hanstanawi/react-ts-starter-template",
+  "bugs": {
+    "url": "https://github.com/hanstanawi/react-ts-starter-template/issues",
+    "email": "hans.tanawi@outlook.com"
+  },
+  "repository": "github:hanstanawi/react-ts-starter-template",
+  "license": "MIT",
+  "author": "Hans Tanawi <hans.tanawi@outlook.com>",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
