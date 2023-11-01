@@ -39,6 +39,16 @@
       {
         "endOfLine": "auto"
       }
+    ],
+    "import/extensions": [
+      0,
+      "never",
+      {
+        ".js": "never",
+        ".jsx": "never",
+        ".ts": "never",
+        ".tsx": "never"
+      }
     ]
   }
 }
