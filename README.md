@@ -11,7 +11,7 @@ This starter template includes:
 - [TailwindCSS](https://tailwindcss.com/) - Utility first CSS
 - [pnpm](https://pnpm.io/) - Fast and efficient package manager
 - [Vite](https://vitejs.dev/guide/) - Blazingly fast frontend build tool
-- [React Router]()
+- [React Router](https://reactrouter.com/en/main) - Client side routing solution for React
 - [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) - Find & fix problems in the codebase and format code automatically on save
   - [Airbnb Config](https://github.com/airbnb/javascript) - Airbnb style guide
 - [Lucide React](https://lucide.dev/) - Beautiful and consistent open-source icons for React
@@ -101,13 +101,37 @@ This docs guides you a quick start to setup Chakra UI on this project. To learn 
    import React from 'react';
    import ReactDOM from 'react-dom/client';
    import { ChakraProvider } from '@chakra-ui/react';
+   import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+   import AboutPage from '@/pages/about';
+   import Homepage from '@/pages/home';
+   import NotFoundPage from '@/pages/not-found';
 
    import App from './App';
+
+   const router = createBrowserRouter([
+     {
+       path: '/',
+       element: <App />,
+       errorElement: <NotFoundPage />,
+       children: [
+         {
+           path: '',
+           element: <Homepage />,
+           index: true,
+         },
+         {
+           path: 'about',
+           element: <AboutPage />,
+         },
+       ],
+     },
+   ]);
 
    ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
      <React.StrictMode>
        <ChakraProvider>
-         <App />
+         <RouterProvider router={router} />
        </ChakraProvider>
      </React.StrictMode>,
    );
