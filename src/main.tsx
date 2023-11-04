@@ -4,8 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import AboutPage from '@/pages/about';
 import Homepage from '@/pages/home';
+import LearnMore from '@/pages/learn-more';
 import NotFoundPage from '@/pages/not-found';
 
 import App from './App';
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         index: true,
       },
       {
-        path: 'about',
-        element: <AboutPage />,
+        path: 'learn-more',
+        element: <LearnMore />,
       },
     ],
   },
