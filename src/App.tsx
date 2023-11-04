@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="flex min-h-screen items-center justify-center">
         <Outlet />
       </main>
     </>
