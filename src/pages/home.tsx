@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import reactLogo from '@/assets/react.svg';
 import tsLogo from '@/assets/ts.svg';
+import Button from '@/components/ui/button';
 
 export default function Homepage() {
   const [count, setCount] = useState(0);
@@ -10,7 +11,11 @@ export default function Homepage() {
     <div className="flex h-full w-full flex-col items-center justify-center">
       <div className="flex justify-center">
         <Link to="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="h-24 p-6" alt="React logo" />
+          <img
+            src={reactLogo}
+            className="h-24 animate-spin-slow p-6"
+            alt="React logo"
+          />
         </Link>
         <Link to="https://typescriptlang.org" target="_blank" rel="noreferrer">
           <img src={tsLogo} className="h-24 p-6" alt="TS logo" />
@@ -27,9 +32,9 @@ export default function Homepage() {
       </p>
 
       <div className="mt-8 flex flex-col items-center justify-center gap-y-4">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>

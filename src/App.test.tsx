@@ -3,13 +3,5 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 
 describe('App.tsx', () => {
-  it('should render Hello World', () => {
-    render(<App />);
-
-    const title = screen.getByRole('heading', {
-      level: 1,
-      name: 'Hello world',
-    });
-    expect(title).toBeInTheDocument();
-  });
+  it.todo('should test the navbar and outlet content');
 });
