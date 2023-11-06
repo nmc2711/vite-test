@@ -1,11 +1,15 @@
-import Button from '@/components/ui/button';
+import { Outlet } from 'react-router-dom';
+
+import Navbar from '@/components/navbar';
 
 function App() {
   return (
-    <div>
-      <h1 className="text-red-500">Hello world</h1>
-      <Button>Hello</Button>
-    </div>
+    <>
+      <Navbar />
+      <main className="flex min-h-screen items-center justify-center">
+        <Outlet />
+      </main>
+    </>
   );
 }
 
