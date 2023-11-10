@@ -10,14 +10,24 @@ export default function Homepage() {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center">
       <div className="flex justify-center">
-        <Link to="https://react.dev" target="_blank" rel="noreferrer">
+        <Link
+          to="https://react.dev"
+          target="_blank"
+          rel="noreferrer"
+          data-testid="react-link"
+        >
           <img
             src={reactLogo}
             className="h-24 animate-spin-slow p-6"
             alt="React logo"
           />
         </Link>
-        <Link to="https://typescriptlang.org" target="_blank" rel="noreferrer">
+        <Link
+          to="https://typescriptlang.org"
+          target="_blank"
+          rel="noreferrer"
+          data-testid="ts-link"
+        >
           <img src={tsLogo} className="h-24 p-6" alt="TS logo" />
         </Link>
       </div>
