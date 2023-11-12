@@ -24,4 +24,10 @@ describe('button.tsx', () => {
     expect(mockFn).toHaveBeenCalled();
     expect(mockFn).toHaveBeenCalledTimes(1);
   });
+
+  it('should render button element without children props', () => {
+    render(<Button />);
+    const button = screen.getByRole('button');
+    expect(button).toBeInTheDocument();
+  });
 });
