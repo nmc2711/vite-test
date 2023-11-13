@@ -154,7 +154,7 @@ This starter template uses Lucide React icons as the default icons library. You 
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about React and TypeScript, take a look at the following resources:
 
 - [Learn React](https://react.dev/learn) - learn about React fundamentals and APIs.
 - [Learn TypeScript](https://learntypescript.dev/) - an interactive course to learn TypeScript
