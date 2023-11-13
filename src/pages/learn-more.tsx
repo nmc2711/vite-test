@@ -1,5 +1,6 @@
 import {
   Atom,
+  Book,
   Bot,
   Boxes,
   Dog,
@@ -235,6 +236,23 @@ export default function LearnMorePage() {
             Dependabot
           </Link>
           - Create pull-request to update your dependencies
+        </ListItem>
+
+        <ListItem>
+          <Book
+            size={20}
+            strokeWidth={2}
+            className="mr-1 inline-block text-black dark:text-white"
+          />
+          <Link
+            to="https://storybook.js.org/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold"
+          >
+            Storybook
+          </Link>
+          - Document and test your components in isolated environment
         </ListItem>
 
         <ListItem>
