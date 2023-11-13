@@ -29,7 +29,7 @@ describe('learn-more.tsx', () => {
     const listItems = screen.getAllByRole('listitem');
 
     expect(list).toBeInTheDocument();
-    expect(listItems).toHaveLength(13);
+    expect(listItems).toHaveLength(14);
   });
 
   it('should render a learn more button with a link', () => {

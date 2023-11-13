@@ -20,6 +20,7 @@ This starter template includes:
   - [Lint Staged](https://github.com/lint-staged/lint-staged) - Format & lint your code before committing, block commit if issues are detected
 - [Github Actions](https://docs.github.com/en/actions) - Check, test, and build your code automatically on push and PR
 - [Dependabot](https://github.com/dependabot) - Create pull-request to update your dependencies
+- [Storybook](https://storybook.js.org/) - Document and test your components in isolated environment
 - [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Unit test your components
 
 ### Getting Started
@@ -51,6 +52,42 @@ This starter template includes:
 4. Open [http://localhost:5137](http://localhost:5137) with your browser to see the result.
 
    You can start editing the page by modifying `App.tsx`. The page auto-updates as you edit the file.
+
+## Testing
+
+This starter template has Jest and Testing Library setup to run component tests. Tests are automatically executed on every pull request and push by GitHub Actions CI workflow.
+
+You can run unit tests manually on your machine:
+
+- Run all unit tests
+  ```bash
+  pnpm test
+  ```
+- Run test in watch mode
+  ```bash
+  pnpm test:watch
+  ```
+- Unit test coverage
+  ```bash
+  pnpm test:cov
+  ```
+
+## Storybook
+
+This starter template comes with Storybook setup out of the box, a library to build, document, and test your components in an isolated environment. It is a great tool where you can share and document your components with your teammates or design team for design system and user experience purposes. [Learn more about Storybook.](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/)
+
+- Run storybook:
+
+  ```bash
+  pnpm storybook
+  ```
+
+- Build storybook:
+  ```bash
+  pnpm storybook:build
+  ```
+
+You don't have to use Storybook in your project if you are building a small project or application. However, it's recommended to use Storybook as a component documentation tool if you are building a large project or application.
 
 ## Switching CSS Frameworks / UI Library
 
@@ -162,3 +199,4 @@ To learn more about React and TypeScript, take a look at the following resources
 - [Learn React with TypeScript](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup) - learn about integrating React with TypeScript
 - [Learn Testing Library](https://testing-library.com/docs/queries/about/#priority) - learn about Testing Library core queries
 - [React Testing Library tips](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library) - tips from Kent C. Dodds about Testing Library
+- [Getting Started with Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) - a guide to get started with Storybook with React
