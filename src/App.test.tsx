@@ -88,7 +88,7 @@ describe('App.tsx', () => {
     expect(pageTitle).toHaveTextContent(/what's inside/i);
 
     expect(list).toBeInTheDocument();
-    expect(listItems).toHaveLength(13);
+    expect(listItems).toHaveLength(14);
   });
 
   it('should navigate between pages', async () => {
