@@ -32,12 +32,12 @@
     "lint:types": "tsc --noEmit",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "format:check": "prettier --check \"./src/**/*.{ts,tsx}\"",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
     "test": "jest",
     "test:ci": "jest --ci",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "test:cov": "jest --coverage"
   },
   "dependencies": {
     "clsx": "^2.0.0",
