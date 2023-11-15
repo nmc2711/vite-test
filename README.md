@@ -53,7 +53,7 @@ This starter template includes:
 
    You can start editing the page by modifying `App.tsx`. The page auto-updates as you edit the file.
 
-## Testing
+### Testing
 
 This starter template has Jest and Testing Library setup to run component tests. Tests are automatically executed on every pull request and push by GitHub Actions CI workflow.
 
@@ -72,7 +72,7 @@ You can run unit tests manually on your machine:
   pnpm test:cov
   ```
 
-## Storybook
+### Storybook
 
 This starter template comes with Storybook setup out of the box, a library to build, document, and test your components in an isolated environment. It is a great tool where you can share and document your components with your teammates or design team for design system and user experience purposes. [Learn more about Storybook.](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/)
 
@@ -89,7 +89,7 @@ This starter template comes with Storybook setup out of the box, a library to bu
 
 You don't have to use Storybook in your project if you are building a small project or application. However, it's recommended to use Storybook as a component documentation tool if you are building a large project or application.
 
-## Switching CSS Frameworks / UI Library
+### Switching CSS Frameworks / UI Library
 
 "What if I don't want to use Tailwind?"
 
@@ -176,7 +176,7 @@ This docs guides you a quick start to setup Chakra UI on this project. To learn 
 
 3. You can start using Chakra UI components in the project.
 
-## Icons
+### Icons
 
 This starter template uses Lucide React icons as the default icons library. You can switch to other React icons library such as [React Icons](https://react-icons.github.io/react-icons/) or [FontAwesome Icons](https://fontawesome.com/v5/docs/web/use-with/react)
 
@@ -189,7 +189,7 @@ This starter template uses Lucide React icons as the default icons library. You 
    pnpm add react-icons
    ```
 
-## Learn More
+### Learn More
 
 To learn more about React and TypeScript, take a look at the following resources:
 
