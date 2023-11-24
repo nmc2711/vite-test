@@ -3,12 +3,12 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-import Homepage from '@/pages/home';
-import LearnMore from '@/pages/learn-more';
-import NotFoundPage from '@/pages/not-found';
-
 import App from './App';
+
+import HomePage from '@/pages/home';
+import MyPage from '@/pages/myPage';
+import MagazinePage from '@/pages/magazine';
+import NotFoundPage from '@/pages/notFound';
 
 const router = createBrowserRouter([
   {
@@ -18,12 +18,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Homepage />,
+        element: <HomePage />,
         index: true,
       },
       {
-        path: 'learn-more',
-        element: <LearnMore />,
+        path: 'myPage',
+        element: <MyPage />,
+      },
+      {
+        path: 'magazine',
+        element: <MagazinePage />,
       },
     ],
   },

@@ -19,14 +19,17 @@ export default function Navbar() {
   return (
     <header className="fixed h-6 w-full p-10">
       <div className="flex h-full items-center justify-between">
-        <h1 className="text-lg font-semibold">React + TypeScript Starter</h1>
+        <h1 className="text-lg font-semibold">로켓지송. FrontEnd</h1>
         <nav>
           <ul className="flex gap-x-6">
             <li>
-              <StyledNavLink href="/" title="Home" />
+              <StyledNavLink href="/" title="메인 페이지" />
             </li>
             <li>
-              <StyledNavLink href="learn-more" title="Learn More" />
+              <StyledNavLink href="myPage" title="마이 페이지" />
+            </li>
+            <li>
+              <StyledNavLink href="magaZine" title="메거진 페이지" />
             </li>
           </ul>
         </nav>

@@ -24,7 +24,7 @@
     "sourceType": "module",
     "project": "tsconfig.json"
   },
-  "plugins": ["simple-import-sort", "react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "react/react-in-jsx-scope": 0,
     "import/prefer-default-export": 0,
@@ -33,8 +33,6 @@
     "no-param-reassign": 0,
     "react/require-default-props": 0,
     "react/button-has-type": 0,
-    "simple-import-sort/imports": 1,
-    "simple-import-sort/exports": 1,
     "@typescript-eslint/no-shadow": 0,
     "@typescript-eslint/no-unused-vars": 1,
     "no-restricted-syntax": 0,

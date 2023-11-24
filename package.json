@@ -1,27 +1,16 @@
 {
-  "name": "react-ts-starter-template",
+  "name": "g-world-fe",
   "version": "1.0.0",
   "engines": {
     "node": ">= 18.x"
   },
-  "description": "React + TypeScript starter template",
+  "description": "g-world-fe",
   "keywords": [
-    "react",
-    "typescript",
-    "tailwind",
-    "jest",
-    "react-router",
-    "testing-library",
-    "github-actions"
+    "g-world",
+    "wooLim",
+    "sangHan",
+    "mijeong"
   ],
-  "homepage": "https://github.com/hanstanawi/react-ts-starter-template",
-  "bugs": {
-    "url": "https://github.com/hanstanawi/react-ts-starter-template/issues",
-    "email": "hans.tanawi@outlook.com"
-  },
-  "repository": "github:hanstanawi/react-ts-starter-template",
-  "license": "MIT",
-  "author": "Hans Tanawi <hans.tanawi@outlook.com>",
   "scripts": {
     "prepare": "husky install",
     "dev": "vite",
@@ -41,6 +30,7 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
+    "jotai": "^2.5.1",
     "lucide-react": "^0.291.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
